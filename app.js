@@ -27,7 +27,7 @@ app.use(cors({ origin: '*' }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/artist', artistRouter);
+app.use('/api', artistRouter);
 const port = process.env.PORT || 3000;
 
 // catch 404 and forward to error handler
